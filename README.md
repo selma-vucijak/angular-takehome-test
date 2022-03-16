@@ -43,7 +43,7 @@ We are looking for solutions which demonstrate a good understaning of Angular in
 
 - Your code shouldn't use the subscribe method, use the async pipe
 - You shouldn't import any additional Angular modules, e.g. Forms are not required
-- The app should only make one call to each of the endpoints `api/customers`, `api/orders` and `api/products` when the `/orders` route is first navigated to (i.e. when the application starts). Prevent the app from making any additional http calls.
+- The app should only make one call to each of the endpoints `api/customers`, `api/orders` and `api/products` when the `/orders` route is first navigated to (i.e. when the application starts). Prevent the app from making any additional http calls. Note that http calls won't show up in your browsers network tab because of the `angular/in-memory-web-api`, you'll need to log to the console to check how many http calls are made.
 - There should be minimal logic in the components.
   - The templates shouldn't contain anything more sophisticated than an `async` pipe, a `date` pipe or simple template expressions `{{ }}` e.g. don't add additional pipes to do filtering or have any other logic in the template.
   - The typescript should only contain logic that is needed for the view.
